@@ -1,5 +1,6 @@
 // https://typeitjs.com/
 new TypeIt("#typeit-block", {
+    string: "",
     speed: 90,
     delay: 700,
     loop: true
