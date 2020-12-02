@@ -1,7 +1,49 @@
-extends base.pug
+extends template/base.pug
 
 block content
     header
         h1 This is Petingo #[br] an enthusiast for #[span#typeit-block]
+        p
+            | I am a #[a(href="https://en.wikipedia.org/wiki/Multipotentiality") multipotentialite ]
+            | with passion to bridge the gap between Computer Science, Photography, and Architecture.
+            | My previous research focused on image manipulation and quality enhancement.
+            | To get more information, please visit #[a(href="about.html") ⇲ About]. #[br]
         
-           
+        ul.icons
+            li
+                a.icon.brands.style1.fa-github(href="https://github.com/Petingo")
+                    span.label Github
+            li
+                a.icon.brands.style1.fa-instagram(href="https://instagram.com/petingo")
+                    span.label Instagram
+            li
+                a.icon.brands.style1.fa-twitter(href="https://twitter.com/Petingooo")
+                    span.label Twitter
+            li
+                a.icon.brands.style1.fa-facebook(href="#")
+                    span.label Facebook
+            li
+                a.icon.solid.style1.fa-envelope(href="mailto:eyanghongbin0315@gmail.com")
+                    span.label Email
+
+    section.tiles
+        mixin article(title, disc, img_src, href)
+            article.style1
+                span.image
+                    img(src=img_src alt="")
+                a(href=href)
+                    h2= title
+                    div.content
+                        p= disc
+              
+        +article(
+            'TICK',
+            'An equipment made for enhancing immersion of FPS games.',
+            'images/refuge-house.png',
+            'tick.html')
+        
+        +article(
+            'Fold the Refuge',
+            'A refuge formed by foldable component which is designed for efficient delivery and quick construction.',
+            'images/refuge-house.png',
+            'fold.html')
