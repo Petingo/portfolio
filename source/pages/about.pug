@@ -2,12 +2,11 @@ extends template/base.pug
 
 block content
     h1 About
+    span.image
+        img(src="images/personal-img.jpg" style="width: 64%; margin-bottom: 1em")
+
     p
         | I am Yang Hong-Bin, aka Petingo, from Taiwan.
-    //- p
-    //-     span(style="background-image: linear-gradient(0deg,transparent 9%, #d1f0ec 10%, #d1f0ec 49%,transparent 50%);")
-    //-         | I am a #[a(href="https://en.wikipedia.org/wiki/Multipotentiality") multipotentialite ]
-    //-         | with passion to bridge the gap between Computer Science, Photography, and Architecture. #[br]
     p
         | Currently, I work as a research assistant @ Academia Sinica, Taiwan, conducting research related to
         | automatic image synthesis and image forgery detection under the supervision of
@@ -21,3 +20,7 @@ block content
         | which is the state-of-the-art of YUV420 chroma subsampling (Dec. 2020).
 
 
+//- p
+    //-     span(style="background-image: linear-gradient(0deg,transparent 9%, #d1f0ec 10%, #d1f0ec 49%,transparent 50%);")
+    //-         | I am a #[a(href="https://en.wikipedia.org/wiki/Multipotentiality") multipotentialite ]
+    //-         | with passion to bridge the gap between Computer Science, Photography, and Architecture. #[br]

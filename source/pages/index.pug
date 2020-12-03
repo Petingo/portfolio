@@ -6,10 +6,15 @@ block content
         p
             | I am a #[a(href="https://en.wikipedia.org/wiki/Multipotentiality") multipotentialite ]
             | with passion to bridge the gap between Computer Science, Photography, and Architecture.
-            | My previous research focused on image manipulation and quality enhancement.
+            | My current research focuses on automatic image synthesis and image quality enhancement.
+            | Recently, I made my mind to apply for a Master's degree to build up my knowledge
+            | toward building interactive architecture, smart cities, and computer aided design.
             | To get more information, please visit #[a(href="about.html") ⇲ About]. #[br]
         
-        ul.icons
+        ul.icons(style="margin-bottom: 4em;")
+            li
+                a.icon.brands.style1.fa-blogger(href="https://petingo.de")
+                    span.label blog
             li
                 a.icon.brands.style1.fa-github(href="https://github.com/Petingo")
                     span.label Github
@@ -25,6 +30,8 @@ block content
             li
                 a.icon.solid.style1.fa-envelope(href="mailto:eyanghongbin0315@gmail.com")
                     span.label Email
+            
+                    
 
     section.tiles
         mixin article(title, disc, img_src, href)
@@ -35,15 +42,21 @@ block content
                     h2= title
                     div.content
                         p= disc
-              
-        +article(
-            'TICK',
-            'An equipment made for enhancing immersion of FPS games.',
-            'images/refuge-house.png',
-            'tick.html')
-        
+
         +article(
             'Fold the Refuge',
             'A refuge formed by foldable components, which is designed for efficient delivery and quick construction.',
-            'images/refuge-house.png',
+            'images/fold.png',
             'fold.html')
+
+        +article(
+            'Hame',
+            'An equipment made for enhancing immersion of FPS games.',
+            'images/hame.jpg',
+            'hame.html')
+        
+        +article(
+            'Smart Xing',
+            'A more interactive pedestrian crossing.',
+            'images/smart-Xing.jpg',
+            'smart-xing.html')

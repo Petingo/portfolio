@@ -1853,6 +1853,7 @@ input[type=radio] + label:before {
   position: relative;
 }
 .image img {
+  width: 100%;
   border-radius: 4px;
   display: block;
 }
@@ -2689,5 +2690,3 @@ body.is-menu-visible #menu .close {
     padding: 0 1.25em;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
