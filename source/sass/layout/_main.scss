@@ -13,3 +13,11 @@
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
 		}
 	}
+
+	#article {
+		width: 70%;
+		margin: auto;
+		@include breakpoint('<=small') {
+			width: 100%;
+		}
+	}

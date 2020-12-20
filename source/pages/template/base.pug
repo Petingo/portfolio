@@ -1,6 +1,13 @@
 doctype html
 html
     head
+        script(async src="https://www.googletagmanager.com/gtag/js?id=G-X60PNPCW5T")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X60PNPCW5T');
+
         title Petingo
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
@@ -43,22 +50,22 @@ html
                                 a.icon.brands.style2.fa-github(href="https://github.com/Petingo")
                                     span.label GitHub
                             li
-                                a.icon.brands.style2.fa-instagram(href="#")
+                                a.icon.brands.style2.fa-instagram(href="https://instagram.com/petingo")
                                     span.label Instagram
                             li
-                                a.icon.brands.style2.fa-twitter(href="#")
+                                a.icon.brands.style2.fa-twitter(href="https://twitter.com/Petingooo")
                                     span.label Twitter
                             li
-                                a.icon.brands.style2.fa-facebook-f(href="#")
+                                a.icon.brands.style2.fa-facebook-f(href="https://www.facebook.com/Petingo")
                                     span.label Facebook
                             li
-                                a.icon.solid.style2.fa-envelope(href="#")
+                                a.icon.solid.style2.fa-envelope(href="mailto:eyanghongbin0315@gmail.com")
                                     span.label Email
                     ul.copyright
                         li &copy; Untitled. All rights reserved
                         li 
-                            | Design:
-                            a(href="http://html5up.net") HTML5 UP
+                            | Modified from:
+                            a(href="https://html5up.net/phantom") HTML5 UP
                 
         script(src="assets/js/jquery.min.js")
         script(src="assets/js/browser.min.js")
